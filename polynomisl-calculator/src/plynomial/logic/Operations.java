@@ -78,6 +78,7 @@ public class Operations {
 			product = minus(mul(result, p2));
 			remainder = add(remainder, product);
 			remainder.sort();
+			
 			a = remainder.getTerms().get(0);
 		}
 		return finalResult;

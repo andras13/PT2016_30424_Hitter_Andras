@@ -23,6 +23,7 @@ public class OperationsTest {
 		result.sort();
 		System.out.println(result);
 		assertTrue("check addition", result.toString().equals("3x^3+2x"));
+				
 		/*Term t1 = new Term(-3, 2);
 		Term t2 = new Term(2, 1);
 		p1.addTerm(t1);

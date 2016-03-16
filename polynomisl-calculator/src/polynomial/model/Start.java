@@ -6,7 +6,6 @@ import javax.swing.JFrame;
 import java.util.Scanner;
 import java.awt.*;
 import plynomial.logic.Operations;
-//import polynomial.gui.Interface;
 import polynomial.gui.Interface;
 
 public class Start {

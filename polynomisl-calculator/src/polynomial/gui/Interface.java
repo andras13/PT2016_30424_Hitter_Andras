@@ -9,17 +9,13 @@ import java.util.LinkedList;
 
 public class Interface extends JFrame {
 
-	Scanner sc;
     private JPanel polyPanel;
     private JPanel opPanel;
-    static JPanel statusInfo;
-    private JLabel spacer;
 
     private JLabel poly1Label;
     private JLabel poly2Label;
     private JLabel resultLabel;
     private JLabel resultLabel2;
-    private JLabel statusLabel;
     public static JButton add;
     public static JButton sub;
     public static JButton mul;
