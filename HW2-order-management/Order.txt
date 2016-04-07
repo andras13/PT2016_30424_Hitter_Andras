@@ -1,0 +1,8 @@
+ID:2
+Name: Wow
+Address: wow str wowo
+Number: 123451234
+Product: Asus Zenfone 2
+Quantity: 0
+FINAL PRICE:-------->199.0<--------------
+Ordered on date: 04/07/2016 15:25:45
