@@ -1,0 +1,51 @@
+Method method1, method2;
+		if (arg instanceof Double) {
+			try {
+				method1 = account.getClass().getMethod("getVault()");
+				method2 = account.getClass().getMethod("getID()");
+				if ((double) arg < 0)
+					this.sendEmail(
+							"A withdraval of " + (-1) * (double) arg + " has been made from your account with ID "
+									+ method2.invoke(account) + ". New balance: " + method1.invoke(account));
+				else
+					this.sendEmail("A deposit of " + (double) arg + " has been made from your account with ID "
+							+ method2.invoke(account) + ". New balance: " + method1.invoke(account));
+			} catch (NoSuchMethodException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (SecurityException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IllegalAccessException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IllegalArgumentException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (InvocationTargetException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		} else if (arg instanceof String) {
+			try {
+				method2 = account.getClass().getMethod("getID()");
+				this.sendEmail(
+						"The password of your account with ID " + method2.invoke(account) + " has been changed.");
+			} catch (NoSuchMethodException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (SecurityException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IllegalAccessException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IllegalArgumentException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (InvocationTargetException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
