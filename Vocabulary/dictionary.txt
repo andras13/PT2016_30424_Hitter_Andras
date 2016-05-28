@@ -1,0 +1,7 @@
+beautiful=nice, pretty, fine;
+big=large, great, high;
+brave=courageous, bold, valiant;
+broccoli=broccoli;
+clever=ingenious, skillful, adept;
+friendly=sociable, amicable, snug;
+stupid=idiot, moron, goofy;
